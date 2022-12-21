@@ -14,4 +14,4 @@ class ReactApp extends App<any> {
   }
 }
 
-export default appWithTranslation(ReactApp, nextI18nextConfig);
+export default appWithTranslation(ReactApp);

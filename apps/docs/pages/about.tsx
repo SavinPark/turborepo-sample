@@ -32,7 +32,8 @@ const AboutPage: React.FC = () => {
 
 export const getStaticProps = async ({ locale, defaultLocale }: any) => ({
   props: {
-    ...(await serverSideTranslations((locale || defaultLocale) as string)),
+    ...(await serverSideTranslations((locale || defaultLocale) as string),
+    ["common"]),
   },
 });
 
