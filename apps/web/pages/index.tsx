@@ -9,11 +9,11 @@ export default function Docs() {
       <h1>{t("web")}</h1>
       <Button />
       <hr />
-      <a href="http://localhost:3001/">Default ( KO ) ✨</a>
+      <a href="http://localhost:3000/">Default ( KO ) ✨</a>
       <br />
-      <a href="http://localhost:3001/ko/">KO ✨</a>
+      <a href="http://localhost:3000/ko/">KO ✨</a>
       <br />
-      <a href="http://localhost:3001/en">EN ✨</a>
+      <a href="http://localhost:3000/en">EN ✨</a>
     </div>
   );
 }
