@@ -1,5 +1,6 @@
 {
   "web": "Web",
+  "docs": "Docs",
   "h1": "About Page",
   "description": "Hello this is about page",
   "currentUrl": "current url"
