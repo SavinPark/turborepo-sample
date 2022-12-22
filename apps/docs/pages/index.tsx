@@ -9,25 +9,19 @@ export default function Docs() {
       <h1>{t("docs")}</h1>
       <Button />
       <hr />
-      <a href="http://localhost:3001/">Default ( KO ) ✨</a>
+      <a href="/">Default ( KO ) ✨</a>
       <br />
-      <a href="http://localhost:3001/ko/">KO ✨</a>
+      <a href="/ko">KO ✨</a>
       <br />
-      <a href="http://localhost:3001/en">EN ✨</a>
+      <a href="/en">EN ✨</a>
       <hr />
-      <a href="http://localhost:3001/post/1">
-        [Docs] Post 1 ( http://localhost:3001/post/1 )
-      </a>
+      <a href="/post/1">[Docs] Post 1 ( http://localhost:3001/post/1 )</a>
       <br />
 
-      <a href="http://localhost:3001/post/2">
-        [Docs] Post 2 ( http://localhost:3001/post/2 )
-      </a>
+      <a href="/post/2">[Docs] Post 2 ( http://localhost:3001/post/2 )</a>
       <br />
 
-      <a href="http://localhost:3001/post/3">
-        [Docs] Post 3 ( http://localhost:3001/post/3 )
-      </a>
+      <a href="/post/3">[Docs] Post 3 ( http://localhost:3001/post/3 )</a>
     </div>
   );
 }

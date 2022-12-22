@@ -19,13 +19,11 @@ function Post({ posts }: any) {
         </div>
       ))}
       <div>
-        <a href={`http://localhost:3000/post/${postNumber}`}>
-          Default ( KO ) ✨
-        </a>
+        <a href={`/post/${postNumber}`}>Default ( KO ) ✨</a>
         <br />
-        <a href={`http://localhost:3000/ko/post/${postNumber}`}>KO ✨</a>
+        <a href={`/ko/post/${postNumber}`}>KO ✨</a>
         <br />
-        <a href={`http://localhost:3000/en/post/${postNumber}`}>EN ✨</a>
+        <a href={`/en/post/${postNumber}`}>EN ✨</a>
       </div>
     </>
   );
