@@ -3,6 +3,7 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 function Post({ posts }: any) {
   const { t } = useTranslation();
+  const postNumber = posts[0].number;
 
   return (
     <>
@@ -18,11 +19,13 @@ function Post({ posts }: any) {
         </div>
       ))}
       <div>
-        <a href="http://localhost:3000/post/1">Default ( KO ) ✨</a>
+        <a href={`http://localhost:3001/post/${postNumber}`}>
+          Default ( KO ) ✨
+        </a>
         <br />
-        <a href="http://localhost:3000/ko/post/1">KO ✨</a>
+        <a href={`http://localhost:3001/ko/post/${postNumber}`}>KO ✨</a>
         <br />
-        <a href="http://localhost:3000/en/post/1">EN ✨</a>
+        <a href={`http://localhost:3001/en/post/${postNumber}`}>EN ✨</a>
       </div>
     </>
   );

@@ -14,6 +14,20 @@ export default function Docs() {
       <a href="http://localhost:3001/ko/">KO ✨</a>
       <br />
       <a href="http://localhost:3001/en">EN ✨</a>
+      <hr />
+      <a href="http://localhost:3001/post/1">
+        [Docs] Post 1 ( http://localhost:3001/post/1 )
+      </a>
+      <br />
+
+      <a href="http://localhost:3001/post/2">
+        [Docs] Post 2 ( http://localhost:3001/post/2 )
+      </a>
+      <br />
+
+      <a href="http://localhost:3001/post/3">
+        [Docs] Post 3 ( http://localhost:3001/post/3 )
+      </a>
     </div>
   );
 }
