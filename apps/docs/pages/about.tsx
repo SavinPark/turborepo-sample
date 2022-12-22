@@ -12,7 +12,7 @@ const AboutPage: React.FC = () => {
       <h1>{t("h1")}</h1>
       <ul>
         <li>
-          {t("currentUrl")} : http://localhost:3000
+          {t("currentUrl")} : http://localhost:3001
           {router.locale !== "ko" && "/" + router.locale}
           {router.pathname}
         </li>
@@ -21,11 +21,11 @@ const AboutPage: React.FC = () => {
         <li>{t("description")}</li>
       </ul>
       <hr />
-      <a href="http://localhost:3000/about">Default ( KO ) ✨</a>
+      <a href="http://localhost:3001/about">Default ( KO ) ✨</a>
       <br />
-      <a href="http://localhost:3000/ko/about">KO ✨</a>
+      <a href="http://localhost:3001/ko/about">KO ✨</a>
       <br />
-      <a href="http://localhost:3000/en/about">EN ✨</a>
+      <a href="http://localhost:3001/en/about">EN ✨</a>
     </div>
   );
 };

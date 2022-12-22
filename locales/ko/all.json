@@ -3,5 +3,7 @@
   "docs": "독스",
   "h1": "어바웃 페이지",
   "description": "안녕하세요 어바웃 페이지입니다.",
-  "currentUrl": "현재 url"
+  "currentUrl": "현재 url",
+  "postNo": "게시물 번호",
+  "postTitle": "게시물 제목"
 }
