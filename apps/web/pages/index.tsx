@@ -5,7 +5,7 @@ import { Button } from "ui";
 export default function Docs() {
   const { t } = useTranslation();
   return (
-    <div>
+    <>
       <h1>{t("web")}</h1>
       <Button />
       <hr />
@@ -22,7 +22,7 @@ export default function Docs() {
       <a href="/post/2">[Web] Post 2 ( http://localhost:3000/post/2 )</a>
       <br />
       <a href="/post/3">[Web] Post 3 ( http://localhost:3000/post/3 )</a>
-    </div>
+    </>
   );
 }
 
