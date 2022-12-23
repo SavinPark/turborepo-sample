@@ -51,38 +51,38 @@ function Post({ posts }: any) {
 
 // --------- getInitialProps :  --------- //
 // next-i18next를 사용할 경우 getInitialProps와 serverSideTranslations 호환되지 않기 때문에 getInitialProps 는 사용 불가
-Post.getInitialProps = async ({ query, locale, defaultLocale }: any) => {
-  const { id } = query;
-  const posts = [
-    { title: "제목1", number: id },
-    { title: "제목2", number: id },
-    { title: "제목3", number: id },
-  ];
-  return {
-    posts,
-    // ...(await serverSideTranslations((locale || defaultLocale) as string)),
-  };
-};
+// Post.getInitialProps = async ({ query, locale, defaultLocale }: any) => {
+//   const { id } = query;
+//   const posts = [
+//     { title: "제목1", number: id },
+//     { title: "제목2", number: id },
+//     { title: "제목3", number: id },
+//   ];
+//   return {
+//     posts,
+//     // ...(await serverSideTranslations((locale || defaultLocale) as string)),
+//   };
+// };
 
 // --------- SSG : 페이지의 path가 외부의 데이터에 의존하는 경우 --------- //
-// export async function getStaticPaths() {
-//   const paths = [
-//     { params: { id: "1" } },
-//     { params: { id: "2" } },
-//     { params: { id: "3" } },
-//   ];
+export async function getStaticPaths() {
+  const paths = [
+    { params: { id: "1" } },
+    { params: { id: "2" } },
+    { params: { id: "3" } },
+  ];
 
-//   return { paths, fallback: false };
-// }
-// export async function getStaticProps({ params }: any) {
-//   return {
-//     props: {
-//       posts: [
-//         { title: "제목1", number: params.id },
-//         { title: "제목2", number: params.id },
-//       ],
-//     },
-//   };
-// }
+  return { paths, fallback: false };
+}
+export async function getStaticProps({ params }: any) {
+  return {
+    props: {
+      posts: [
+        { title: "제목1", number: params.id },
+        { title: "제목2", number: params.id },
+      ],
+    },
+  };
+}
 
 export default Post;
