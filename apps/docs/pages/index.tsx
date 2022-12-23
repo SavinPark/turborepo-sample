@@ -5,7 +5,7 @@ import { Button } from "ui";
 export default function Docs() {
   const { t } = useTranslation();
   return (
-    <div>
+    <>
       <h1>{t("docs")}</h1>
       <Button />
       <hr />
@@ -16,16 +16,13 @@ export default function Docs() {
       <a href="/en">EN ✨</a>
       <hr />
       <a href="/about">[Docs] About ( http://localhost:3001/about )</a>
-      <br />
       <hr />
       <a href="/post/1">[Docs] Post 1 ( http://localhost:3001/post/1 )</a>
       <br />
-
       <a href="/post/2">[Docs] Post 2 ( http://localhost:3001/post/2 )</a>
       <br />
-
       <a href="/post/3">[Docs] Post 3 ( http://localhost:3001/post/3 )</a>
-    </div>
+    </>
   );
 }
 

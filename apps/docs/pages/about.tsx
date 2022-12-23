@@ -21,11 +21,11 @@ const AboutPage: React.FC = () => {
         <li>{t("description")}</li>
       </ul>
       <hr />
-      <a href="http://localhost:3001/about">Default ( KO ) ✨</a>
+      <a href="/about">Default ( KO ) ✨</a>
       <br />
-      <a href="http://localhost:3001/ko/about">KO ✨</a>
+      <a href="/ko/about">KO ✨</a>
       <br />
-      <a href="http://localhost:3001/en/about">EN ✨</a>
+      <a href="/en/about">EN ✨</a>
     </div>
   );
 };
