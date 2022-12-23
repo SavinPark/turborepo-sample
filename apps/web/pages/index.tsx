@@ -15,12 +15,12 @@ export default function Docs() {
       <br />
       <a href="/en">EN ✨</a>
       <hr />
+      <a href="/about">[Web] About ( http://localhost:3000/about )</a>
+      <hr />
       <a href="/post/1">[Web] Post 1 ( http://localhost:3000/post/1 )</a>
       <br />
-
       <a href="/post/2">[Web] Post 2 ( http://localhost:3000/post/2 )</a>
       <br />
-
       <a href="/post/3">[Web] Post 3 ( http://localhost:3000/post/3 )</a>
     </div>
   );

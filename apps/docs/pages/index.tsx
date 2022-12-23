@@ -15,6 +15,9 @@ export default function Docs() {
       <br />
       <a href="/en">EN ✨</a>
       <hr />
+      <a href="/about">[Docs] About ( http://localhost:3001/about )</a>
+      <br />
+      <hr />
       <a href="/post/1">[Docs] Post 1 ( http://localhost:3001/post/1 )</a>
       <br />
 
