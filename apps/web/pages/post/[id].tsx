@@ -1,5 +1,6 @@
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { MetaTag } from "ui";
 
 function Post({ posts }: any) {
   const { t } = useTranslation();
@@ -7,6 +8,7 @@ function Post({ posts }: any) {
 
   return (
     <>
+      {postNumber && <MetaTag id={postNumber} />}
       {posts.map((post: any) => (
         <div>
           <p>
@@ -41,6 +43,7 @@ export async function getServerSideProps({
     { title: "제목2", number: id },
     { title: "제목3", number: id },
   ];
+
   return {
     props: {
       posts,
