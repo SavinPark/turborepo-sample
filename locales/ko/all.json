@@ -5,5 +5,8 @@
   "description": "안녕하세요 어바웃 페이지입니다.",
   "currentUrl": "현재 url",
   "postNo": "게시물 번호",
-  "postTitle": "게시물 제목"
+  "postTitle": "게시물 제목",
+  "metaTitle": "페이지 제목",
+  "metaAuthor": "페이지 작성자",
+  "metaDescription": "페이지 내용"
 }

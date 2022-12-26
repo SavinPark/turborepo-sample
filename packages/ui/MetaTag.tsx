@@ -1,16 +1,18 @@
+import { useTranslation } from "next-i18next";
 import Head from "next/head";
 
 export const MetaTag = (props: any) => {
-  console.log(props.id);
   const { id } = props;
+  const { t } = useTranslation();
+
   return (
     <Head>
-      <title>TITLE {id}</title>
-      <meta name="author" content={`AUTHOR ${id}`} />
+      <title>POST #{id}</title>
+      <meta name="author" content={`${t("metaAuthor")} ${id}`} />
       <meta
         key="description"
         name="description"
-        content={`DESCRIPTION ${id}`}
+        content={`${t("metaDescription")} ${id}`}
       />
     </Head>
   );

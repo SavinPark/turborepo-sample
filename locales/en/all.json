@@ -5,5 +5,8 @@
   "description": "Hello this is about page",
   "currentUrl": "current url",
   "postNo": "Post No.",
-  "postTitle": "Post Title"
+  "postTitle": "Post Title",
+  "metaTitle": "Page Title",
+  "metaAuthor": "Page Author",
+  "metaDescription": "Page Description"
 }
