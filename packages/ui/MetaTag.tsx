@@ -7,7 +7,9 @@ export const MetaTag = (props: any) => {
 
   return (
     <Head>
-      <title>POST #{id}</title>
+      <title>
+        {t("metaTitle")} #{id}
+      </title>
       <meta name="author" content={`${t("metaAuthor")} ${id}`} />
       <meta
         key="description"
